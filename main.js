@@ -17,11 +17,6 @@ form.addEventListener('submit', function (e) {
   const containerMensagemErro = document.querySelector('.error-message');
   containerMensagemErro.innerHTML = mensagemErro;
 
-  if (valorAform == '' || valorB == '') {
-    alert('Informe os valores de A e B');
-    return false;
-  }
-
   if (valorBform > valorAform) {
     alert('Valor B é maior que Valor A')
     containerMensagemSucesso.style.display = 'block';
